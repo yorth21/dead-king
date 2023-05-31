@@ -285,6 +285,10 @@ export function buscarCamino(inputCaballos, inputRey) {
 
     // Verificar si se ha alcanzado el nodo final
     if (verificarSiTermino(nodoActual)) {
+      console.log("lista abierta");
+      console.log(listaAbierta);
+      console.log("lista cerrada");
+      console.log(listaCerrada);
       console.log("WIND!!");
       // Se ha encontrado el camino, reconstruirlo y devolverlo
       return reconstruirCamino(nodoActual);
